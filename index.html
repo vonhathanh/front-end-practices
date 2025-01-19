@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            button {
+                background-color: transparent;
+                padding: 20px;
+                border: 1px solid navi;
+                font-size: 1.5rem;
+            }
+            button::hover {
+                background-color: navy;
+                color: white;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <button>Click Me</button>
+        <div class="container"></div>
+        <script>
+            function onClickEvent() {
+                console.log("clicked")
+                const el = document.createElement("p")
+                el.innerText = "Clicked the button"
+                document.querySelector(".container").appendChild(el)
+            }
+            document.querySelector("button").onclick = onClickEvent
+        </script>
+    </body>
+</html>
