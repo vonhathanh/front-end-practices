@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: bisque;
+    font-family: Karla, sans-serif
+}
+
+main {
+    max-width: 500px;
+    display: grid;
+    grid-template-rows: auto auto;
+    /* justify-content: center; */
+}
+
+section.introduction {
+    padding: 20px;
+    background-color: white;
+}
+
+section.detail {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    color: white;
+}
+
+#join-community {
+    color: #2AB2B0;
+    font-size: 1.5rem;
+}
+
+div.pricing {
+    flex: 50%;
+    padding: 20px;
+    background-color: #2AA2B0;
+}
+
+div.about {
+    flex: 50%;
+    padding: 20px;
+    background-color: #2FB2B0;
+}
+
+.about-paragraph {
+    margin-top: 0px;
+    color: #F5E5E6;
+    font-size: 0.9rem;
+}
+
+#sign-up-btn {
+    background-color: #C0DF34;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+}
