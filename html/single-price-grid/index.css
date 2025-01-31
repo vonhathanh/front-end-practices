@@ -7,9 +7,6 @@ html {
 
 main {
     max-width: 500px;
-    display: grid;
-    grid-template-rows: auto auto;
-    /* justify-content: center; */
 }
 
 section.introduction {
@@ -20,7 +17,6 @@ section.introduction {
 section.detail {
     display: flex;
     flex-direction: row;
-    align-self: start;
     color: white;
 }
 
@@ -53,4 +49,10 @@ div.about {
     border: none;
     border-radius: 5px;
     padding: 10px 0px 10px 0px;
+}
+
+@media (max-width: 350px) {
+    section.detail {
+        flex-direction: column;
+    }
 }
